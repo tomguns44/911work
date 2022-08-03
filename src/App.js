@@ -9,9 +9,8 @@ function App() {
 
   return (
     <div className="App">
-        <Login/>
-       {/* {device == "PC" ? <IndexPC/>:<Index/>} */}
-        
+       <Login/>
+       {/* device == "PC" ? <IndexPC/>:<Index/> */} 
     </div>
   );
 }
