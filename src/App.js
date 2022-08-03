@@ -1,23 +1,17 @@
 import logo from './logo.svg';
-import './App.css';
-
+import Index from './pages/mobile/index';
+import Login from './pages/mobile/member/login';
+import IndexPC from './pages/pc/index';
+import useRWD from './pages/globalComponents/useRWD';
 function App() {
+
+  const device = useRWD();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Login/>
+       {/* {device == "PC" ? <IndexPC/>:<Index/>} */}
+        
     </div>
   );
 }

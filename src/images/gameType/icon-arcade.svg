@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="30px" viewBox="0 0 45 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-arcade</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="28.08125%" y1="129.55625%" x2="173.1%" y2="-137.775%" id="linearGradient-1">
+            <stop stop-color="#F3C161" offset="0%"></stop>
+            <stop stop-color="#BA7900" offset="49.9954841%"></stop>
+            <stop stop-color="#FFEDD7" offset="53.5540101%"></stop>
+            <stop stop-color="#E1BC71" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="28.08125%" y1="129.55625%" x2="50%" y2="-43.025%" id="linearGradient-2">
+            <stop stop-color="#F3C161" offset="0%"></stop>
+            <stop stop-color="#BA7900" offset="49.9954841%"></stop>
+            <stop stop-color="#FFEDD7" offset="53.5540101%"></stop>
+            <stop stop-color="#E1BC71" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="9.27857143%" y1="103.655319%" x2="90.5585714%" y2="-1.18191489%" id="linearGradient-3">
+            <stop stop-color="#F3C161" offset="0%"></stop>
+            <stop stop-color="#BA7900" offset="49.9954841%"></stop>
+            <stop stop-color="#FFEDD7" offset="53.5540101%"></stop>
+            <stop stop-color="#E1BC71" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="22.7667279%" y1="124.895864%" x2="85.4411765%" y2="-14.9452206%" id="linearGradient-4">
+            <stop stop-color="#F3C161" offset="0%"></stop>
+            <stop stop-color="#BA7900" offset="49.9954841%"></stop>
+            <stop stop-color="#FFEDD7" offset="53.5540101%"></stop>
+            <stop stop-color="#E1BC71" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icon-arcade" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9" transform="translate(7.000000, 3.000000)">
+            <path d="M0,22.4056604 L31.25,22.4056604 L30.2843334,24.2316481 C30.1110937,24.5592286 29.7709073,24.7641509 29.4003388,24.7641509 L1.84966116,24.7641509 C1.47909273,24.7641509 1.13890625,24.5592286 0.965666574,24.2316481 L0,22.4056604 Z" id="Rectangle-12" fill="url(#linearGradient-1)"></path>
+            <path d="M3.01266807,10.6132075 L27.7277218,10.6132075 C28.1834596,10.6132075 28.5815493,10.9213437 28.6957925,11.3625301 L31.25,21.2264151 L0,21.2264151 L2.03345815,11.410358 C2.12962897,10.9461153 2.53856873,10.6132075 3.01266807,10.6132075 Z M20.9259343,15.6076582 C22.131427,15.6076582 23.108672,15.0486352 23.108672,14.3590455 C23.108672,13.6694558 22.131427,13.1104329 20.9259343,13.1104329 C19.7204416,13.1104329 18.7431967,13.6694558 18.7431967,14.3590455 C18.7431967,15.0486352 19.7204416,15.6076582 20.9259343,15.6076582 Z M25.2914097,18.1048835 C26.4969024,18.1048835 27.4741473,17.5458605 27.4741473,16.8562708 C27.4741473,16.1666811 26.4969024,15.6076582 25.2914097,15.6076582 C24.0859169,15.6076582 23.108672,16.1666811 23.108672,16.8562708 C23.108672,17.5458605 24.0859169,18.1048835 25.2914097,18.1048835 Z M9.72877358,18.5557714 C13.1479893,18.5557714 15.9198113,17.4377255 15.9198113,16.0585461 C15.9198113,14.6793666 13.1479893,13.5613208 9.72877358,13.5613208 C6.30955786,13.5613208 3.53773585,14.6793666 3.53773585,16.0585461 C3.53773585,17.4377255 6.30955786,18.5557714 9.72877358,18.5557714 Z" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+            <rect id="Rectangle-11" fill="url(#linearGradient-3)" x="7.66509434" y="6.48584906" width="4.12735849" height="10.6132075" rx="2.06367925"></rect>
+            <circle id="Oval-3" fill="url(#linearGradient-4)" cx="9.72877358" cy="5.01179245" r="5.01179245"></circle>
+        </g>
+    </g>
+</svg>
