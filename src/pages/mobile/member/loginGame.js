@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-
-
 const LoginGame =({setOpen}) =>{
 
     const [data,setData] = useState({
@@ -18,11 +16,27 @@ const LoginGame =({setOpen}) =>{
         e.preventDefault();
         const LoginName = document.getElementById('LoginName').value
         const Password = document.getElementById('Password').value
-        const sendData={
+        /* const sendData={
             LoginName:data.LoginName,
             Password:data.Password,
         }
-        console.log(sendData)
+        console.log(sendData) */
+        fetch('./API/member.php', { 
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+        'LoginName': LoginName,
+        'Password': Password,
+        })
+        })
+        .then(
+        response => response.text()
+        )
+        .then((body) => {
+        console.log(body);
+        });
     }
     
     return(
