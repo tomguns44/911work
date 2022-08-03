@@ -34,8 +34,12 @@ const LoginGame =({setOpen}) =>{
         .then(
         response => response.text()
         )
-        .then((body) => {
-        console.log(body);
+        .then((data) => {
+            var obj = JSON.parse(data);
+            if (obj.code=="Ok"){
+            }else{
+            }
+        console.log(data);
         });
     }
     
