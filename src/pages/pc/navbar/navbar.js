@@ -13,7 +13,9 @@ import liveIcon from '../../../images/gameType/icon-live.svg'
 import fishIcon from '../../../images/gameType/icon-fish.svg'
 import sportsIcon from '../../../images/gameType/icon-sports.svg'
 import rngtableIcon from '../../../images/gameType/icon-rngtable.svg'
+import Hamburger from './hamburger';
 import { Link } from 'react-router-dom';
+import Pop from '../../mobile/components/Pop';
 
 import {useSelector,useDispatch} from 'react-redux';
 import {select} from '../../redux/counterSlice'
@@ -43,7 +45,7 @@ const gameType = [
     {
         icon:homeIcon,
         title:"Home",
-        link:""
+        link:"Home"
     },
     {
         icon:slotIcon,
@@ -78,8 +80,9 @@ const gameType = [
 ]
 
 const Navbar = ({moreClick,setMoreClick}) =>{
-
-
+    const [openPop,setOpenPop] = useState('');
+    const [openHam,setOpenHam] = useState(false);
+ 
     return(
         <Header className='fixed top-0 left-0 w-full z-50'>
             <nav className='flex items-center justify-between p-3 container mx-auto'>
@@ -99,7 +102,10 @@ const Navbar = ({moreClick,setMoreClick}) =>{
                         <p className='mr-2'>EN</p>
                         <img src={EN} style={{width:"30px"}}/>
                     </div>
-                    <GiHamburgerMenu className='text-3xl cursor-pointer'/>
+                    <div className='relative'>
+                        <GiHamburgerMenu className='text-3xl cursor-pointer' onClick={()=>setOpenHam(!openHam)}/>
+                        {openHam == true ? <Hamburger setOpenPop={setOpenPop} setOpenHam={setOpenHam}/> : null}
+                    </div>
                 </div>
             </nav>   
             <header className=''>
@@ -121,6 +127,7 @@ const Navbar = ({moreClick,setMoreClick}) =>{
                     </ul>
                 </section>
             </header>
+            {openPop !== '' ? <Pop Width="400px" setOpenPop={setOpenPop} openPop={openPop}/> : null}
         </Header>
     )
 }

@@ -9,12 +9,11 @@ import Resetpassword from '../member/PopContent/Resetpassword';
 
 const Main = styled.div`
     main{
-        width:100%;
         height:500px;
     }
 `
 
-const Pop = ({setOpenPop,openPop}) =>{
+const Pop = ({setOpenPop,openPop,Width}) =>{
     return(
         <>
         <motion.section
@@ -26,8 +25,8 @@ const Pop = ({setOpenPop,openPop}) =>{
         >
             <Main className='flex items-center justify-center px-5 w-screen h-screen fixed top-0 left-0' style={{zIndex:"60"}}>
                 <PopShadow setOpenPop={setOpenPop}/>
-                <main className='bg-white relative rounded-3xl flex flex-col py-4 px-5 ' style={{zIndex:"200"}}>
-                    <AiOutlineCloseCircle className='self-end text-3xl mb-5' onClick={()=>setOpenPop('')}/>
+                <main className='bg-white relative rounded-3xl flex flex-col py-4 px-5 ' style={{zIndex:"200",width:Width}}>
+                    <AiOutlineCloseCircle className='self-end text-3xl mb-5 hover:scale-110 cursor-pointer transition duration-300' onClick={()=>setOpenPop('')}/>
                     {openPop == 'Member Info' ? <MemberDetail/> : null}
                     {openPop == 'Reset Password' ? <Resetpassword/> : null}
                 </main>
