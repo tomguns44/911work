@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import API_URL from '../../globalComponents/GlobalVar';
 
 const LoginGame =({setOpen}) =>{
 
@@ -21,7 +22,7 @@ const LoginGame =({setOpen}) =>{
             Password:data.Password,
         }
         console.log(sendData) */
-        fetch('./API/member.php', { 
+        fetch(`${API_URL}`, { 
         method: 'POST',
         headers: {
         'Content-Type': 'application/json'
@@ -37,10 +38,10 @@ const LoginGame =({setOpen}) =>{
         .then((data) => {
             var obj = JSON.parse(data);
             if (obj.code=="Ok"){
-                if (window.sessionStorage.getItem('sess_911betnet_xyz')!==null) {
+                if (window.sessionStorage.getItem('sess_911betnet')!==null) {
                     window.sessionStorage.removeItem();
                 }
-                window.sessionStorage.setItem('sess_911betnet_xyz',obj.token);
+                window.sessionStorage.setItem('sess_911betnet',obj.token);
             }else{
             }
         console.log(data);

@@ -21,7 +21,6 @@ const Register = ({setOpen}) =>{
             passwordagain:data.passwordagain
         }
         console.log(sendData);
-        console.log('123');
     }
 
     return(
