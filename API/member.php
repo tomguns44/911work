@@ -45,6 +45,7 @@ case "get_access_token":
 			$result['msg'] = "Success";
 			$result['oauth'] = $oauth;
 		}
+		break;
 		
 case "get_account_balance":
 		$oauth = isset($params['oauth'])?$params['oauth']:"-1";
