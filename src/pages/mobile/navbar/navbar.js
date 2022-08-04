@@ -126,7 +126,7 @@ const Navbar = ({setOpenIframe,openIframe,setMiniIframe,miniIframe}) =>{
             </div>
         </Nav>
         <Slidebar setOpenSilder={setOpenSilder} openSilder={openSilder} setOpenPop={setOpenPop}/>
-        {openPop !== '' ? <Pop setOpenPop={setOpenPop} openPop={openPop}/> : null}
+        {openPop !== '' ? <Pop Width="100%" setOpenPop={setOpenPop} openPop={openPop}/> : null}
         </>
     )
 }
