@@ -20,8 +20,8 @@ const Register = ({setOpen}) =>{
             Password:data.Password,
             passwordagain:data.passwordagain
         }
-        console.log(sendData)
-
+        console.log(sendData);
+        console.log('123');
     }
 
     return(
