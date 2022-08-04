@@ -37,10 +37,10 @@ const LoginGame =({setOpen}) =>{
         .then((data) => {
             var obj = JSON.parse(data);
             if (obj.code=="Ok"){
-                if (window.sessionStorage.getItem('sess_911betnet_x')!==null) {
+                if (window.sessionStorage.getItem('sess_911betnet_xyz')!==null) {
                     window.sessionStorage.removeItem();
                 }
-                window.sessionStorage.setItem('sess_911betnet_x',obj.token);
+                window.sessionStorage.setItem('sess_911betnet_xyz',obj.token);
             }else{
             }
         console.log(data);
